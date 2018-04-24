@@ -10,6 +10,7 @@ public abstract class main {
 		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel,dogfightModel);
 		dogfightController.setViewSystem(dogfightView);
 		dogfightController.play(); 
+		System.out.println("iohzrbqùp");
 	}
 
 }

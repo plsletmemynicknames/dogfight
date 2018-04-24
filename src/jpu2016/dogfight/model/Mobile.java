@@ -7,35 +7,32 @@ public class Mobile implements IMobile {
 
 //-------------------------------Attributs----------------------------
 	private int speed;
+	private Direction direction;
+	private Position position;
+	private Dimension dimension;
 	
 //-------------------------------Constructor----------------------------	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image) {
 		this.speed = speed;
-		}
-
+		this.direction = direction;
+		this.position = position;}
+	
+//-------------------------------Méthodes----------------------------	
 	@Override
 	public Direction getDirection() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		return this.direction;}
 
 	@Override
 	public void setDirection(Direction direction) {
-		// TODO Auto-generated method stub
-		
-	}
+		this.direction = direction;}
 
 	@Override
-	public Point getPosition() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public Position getPosition() {
+		return this.position;}
 
 	@Override
 	public Dimension getDimension() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		return this.dimension;}
 
 	@Override
 	public int getWidth() {
@@ -96,8 +93,6 @@ public class Mobile implements IMobile {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	
-	
+
 	
 }

@@ -2,7 +2,6 @@ package jpu2016.dogfight.model;
 
 import java.awt.Color;
 import java.awt.Image;
-import java.awt.Point;
 
 public class Mobile implements IMobile {
 

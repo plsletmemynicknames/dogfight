@@ -13,20 +13,23 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	
 	@Override
 	public IArea getArea() {
-		return null;}
+		return this.sky;}
 
 	@Override
-	public void buildArea(Dimension dimension) {	}
+	public void buildArea(Dimension dimension) {
+		this.sky = new Sky(dimension);}
 
 	@Override
-	public void addMobile(IMobile Mobile) {		}
+	public void addMobile(IMobile Mobile) {
+		this.mobiles.add(Mobile);}
 
 	@Override
-	public void removeMobile(IMobile Mobile) {		}
+	public void removeMobile(IMobile Mobile) {
+		this.mobiles.remove(Mobile);}
 
 	@Override
 	public ArrayList<IMobile> getMobiles() {
-		return null;}
+		return this.mobiles;}
 
 	@Override
 	public IMobile getMobileByPlayer(int player) {

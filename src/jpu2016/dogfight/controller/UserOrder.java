@@ -18,7 +18,7 @@ public class UserOrder implements IUserOrder{
 
 	@Override
 	public int getPlayer() {
-		return player;
+		return this.player;
 	}
 
 	

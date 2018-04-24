@@ -33,7 +33,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	@Override
 	public IMobile getMobileByPlayer(int player) {
-		return null;}
+		return this.mobiles.get(player).isPlayer(player);}
 
 	@Override
 	public void setMobilesHavesMoved() {	}

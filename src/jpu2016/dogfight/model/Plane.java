@@ -12,7 +12,10 @@ public class Plane extends Mobile {
 		this.player = player;}
 	
 	public boolean isPlayer(int player) {
-		return super.isPlayer(player);}
+		if (this.player == player) {
+			return true;}
+		else {
+			return false;}}
 	
 	public boolean hit() {
 		return super.hit();}

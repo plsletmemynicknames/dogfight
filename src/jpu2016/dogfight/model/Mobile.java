@@ -2,7 +2,6 @@ package jpu2016.dogfight.model;
 
 import java.awt.Color;
 import java.awt.Image;
-import java.util.ArrayList;
 
 public class Mobile implements IMobile {
 
@@ -11,7 +10,7 @@ public class Mobile implements IMobile {
 	private Direction direction;
 	private Position position;
 	private Dimension dimension;
-	private ArrayList<Image> image;
+	private Image image;
 	private Color color;
 	private IDogfightModel dogfightModel;
 	
